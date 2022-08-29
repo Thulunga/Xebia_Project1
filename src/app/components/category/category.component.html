@@ -1,0 +1,15 @@
+
+  <h1 class="text-center">Categories</h1>
+  <div class="row">
+    <div class="card-deck">
+      <div class="card bg-warning" *ngFor="let categori of categories" >
+        <div class="card-body text-center">
+            <img src="http://rjtmobile.com/grocery/images/{{categori.catImage}}" class="card-img-center" alt="category image">
+            <h5 class="card-title">{{ categori.catName }}</h5>
+            <p class="card-text">{{ categori.Description }}</p>
+            <button (click)="onButtonClicked(categori.catId)" class="btn btn-primary btn-block">Select</button>
+          </div>
+      </div>
+  </div>
+
+</div>
